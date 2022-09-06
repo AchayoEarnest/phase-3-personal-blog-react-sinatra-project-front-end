@@ -3,6 +3,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-color: rgb(44, 43, 43);
+  color: white;
 }
 
 
@@ -28,21 +30,24 @@ body {
 .Sidebar_Sect_Left {
   width: 20%;
   display: grid;
+  background-color: rgb(39, 37, 37);
+  border-radius: 12px;
+  margin-right: 10px;
   height: 40rem;
-  background-color: grey;
 }
 
 /* main_section */
 .Main_Area {
-  width: 50%;
+  width: 60%;
   display: grid;
   height: 100vh;
-  background-color: rgb(39, 39, 184);
+  border-left: solid 1px rgb(119, 117, 117);
+  border-right: solid 1px rgb(119, 117, 117);
 }
 
+/* Left_bar_right */
 .Sidebar_Sect_Right {
-  width: 30%;
+  width: 20%;
   display: grid;
   height: 100vh;
-  background-color: rgb(39, 184, 39);
 }
