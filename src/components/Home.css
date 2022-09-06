@@ -1,0 +1,75 @@
+* {
+    font-size: 97.5%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(44, 43, 43);
+    color: white;
+  }
+  
+  
+  body {
+    margin: 0;
+    font: 1rem helvetica;
+    height: 100vh;
+  }
+  
+  .App {
+    display: grid;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .Main_Page{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 12px;
+  }
+  
+  /* Left_Sidebar_Section */
+  .Sidebar_Sect_Left {
+    width: 20%;
+    display: grid;
+    background-color: rgb(39, 37, 37);
+    border-radius: 12px;
+    margin-right: 10px;
+    height: 40rem;
+    padding :10px
+  }
+  
+  /* main_section */
+  .Main_Area {
+    width: 60%;
+    display: grid;
+    height: 100%;
+    border-left: solid 1px rgb(119, 117, 117);
+    border-right: solid 1px rgb(119, 117, 117);
+    border-top: solid 1px rgb(119, 117, 117);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding :10px
+  }
+  
+  /* Left_bar_right */
+  .Sidebar_Sect_Right {
+    width: 20%;
+    display: grid;
+    height: 100vh;
+    padding :10px
+  }
+
+  .Hero_Head {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Hero_Head > h1{
+    font-size: 40px;
+    color: rgb(90, 219, 73);
+  }
+
+  .Hero_Head > h3{
+    font-size: 18px;
+    color: rgb(90, 219, 73);
+  }
