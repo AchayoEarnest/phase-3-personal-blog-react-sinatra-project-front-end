@@ -29,11 +29,13 @@
   /* Left_Sidebar_Section */
   .Sidebar_Sect_Left {
     width: 20%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: rgb(39, 37, 37);
     border-radius: 12px;
     margin-right: 10px;
-    height: 40rem;
+    height: 20rem;
     padding :10px
   }
   
@@ -55,7 +57,19 @@
     width: 20%;
     display: grid;
     height: 100vh;
-    padding :10px
+    padding :10px;
+  }
+
+  .Side_Bar_Links {
+    color: rgb(90, 219, 73);
+    background-color: rgb(39, 37, 37);
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  .Side_Bar_Links:hover {
+   border-style: 1px solid rgb(90, 219, 73);
+   color: white;
   }
 
   .Hero_Head {

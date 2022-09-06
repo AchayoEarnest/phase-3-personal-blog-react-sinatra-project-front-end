@@ -7,7 +7,18 @@ function Home() {
         <div className="Home">
             <div className="Main_Page">
                 <div className="Sidebar_Sect_Left">
-                Sidebar_Area_Left
+                    <div className="Side_Bar_Links">
+                        Home
+                    </div>
+                    <div className="Side_Bar_Links">
+                        Explore
+                    </div>
+                    <div className="Side_Bar_Links">
+                        Account
+                    </div>
+                    <div className="Side_Bar_Links">
+                        Contact Us
+                    </div>
                 </div>
 
                 <div className="Main_Area">
