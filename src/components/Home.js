@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./Container";
 import Search from "./Search";
 import "./Home.css";
-import PostFetching from "./PostsFetching";
+import Fetching from "./Fetching";
 
 function Home() {
     return (
@@ -33,11 +33,11 @@ function Home() {
                 </div>
                     <Search />
 
-                    <PostFetching />                    
+                    <Fetching />                    
                 </div>
                 
                 <div className="Sidebar_Sect_Right">
-                Sidebar_Area_Right
+                {/* Sidebar_Area_Right */}
                 </div>
             </div>
         </div>

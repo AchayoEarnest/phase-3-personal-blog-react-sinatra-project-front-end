@@ -1,0 +1,14 @@
+.Each_Post_Layout {
+    background-color: white;
+    margin-bottom: 28px;
+    border-style: 1px solid grey;
+}
+
+.Titles {
+    color: rgb(253, 140, 10);
+}
+.Each_Post_Lower_Section {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
