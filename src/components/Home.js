@@ -30,6 +30,9 @@ function Home() {
                     <Container />
                     <Container />
                     <Container />
+                    <Container />
+                    <Container />
+                    <Container />
                 </div>
 
                 <div className="Sidebar_Sect_Right">

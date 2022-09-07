@@ -3,7 +3,7 @@ import { Container, Header } from 'semantic-ui-react'
 import Comments from "./Comments"
 
 const ContainerSect = () => (
-  <Container text>
+  <Container text className='PostContent'>
     <Header as='h2'>Header</Header>
     <p>
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo

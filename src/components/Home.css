@@ -61,14 +61,14 @@
   }
 
   .Side_Bar_Links {
-    color: rgb(90, 219, 73);
+    color: rgb(253, 140, 10);
     background-color: rgb(39, 37, 37);
     cursor: pointer;
     font-size: 1.2rem;
   }
 
   .Side_Bar_Links:hover {
-   border-style: 1px solid rgb(90, 219, 73);
+   border-style: 1px solid rgb(253, 140, 10);
    color: white;
   }
 
@@ -80,10 +80,10 @@
 
   .Hero_Head > h1{
     font-size: 40px;
-    color: rgb(90, 219, 73);
+    color: rgb(253, 140, 10);
   }
 
   .Hero_Head > h3{
     font-size: 18px;
-    color: rgb(90, 219, 73);
+    color: rgb(253, 140, 10);
   }
