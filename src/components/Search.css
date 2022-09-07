@@ -1,0 +1,9 @@
+.Search_Input {
+    height: 30px;
+    display: flex;
+    float: right;
+    width: 200px;
+    border-radius: 7px;
+    padding-left: 5px;
+    color: rgb(253, 140, 10);
+}
