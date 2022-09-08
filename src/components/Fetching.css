@@ -1,7 +1,9 @@
 .Each_Post_Layout {
     background-color: white;
     margin-bottom: 28px;
-    border-style: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-radius: 7px;
+    padding: 
 }
 
 .Titles {
@@ -11,4 +13,9 @@
     display: flex;
     flex-direction: row;
     float: right;
+    margin-top: 5px;   
+}
+
+.FetchList > ul > li{
+    list-style: none;
 }

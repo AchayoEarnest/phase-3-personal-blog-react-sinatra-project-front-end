@@ -84,4 +84,9 @@
     font-size: 18px;
     color: rgb(253, 140, 10);
   }
+
+  .FooterNote {
+    display: flex;
+    align-items: center;
+  }
  

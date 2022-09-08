@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "./Container";
 import Search from "./Search";
 import "./Home.css";
 import Fetching from "./Fetching";
@@ -33,7 +32,8 @@ function Home() {
                 </div>
                     <Search />
 
-                    <Fetching />                    
+                    <Fetching /> 
+                    <div className="FooterNote">By Earnest</div>
                 </div>
                 
                 <div className="Sidebar_Sect_Right">

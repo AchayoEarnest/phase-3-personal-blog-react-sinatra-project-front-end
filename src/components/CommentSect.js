@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Comment, Form } from 'semantic-ui-react'
-import "./Container.css";
+import "./CommentSect.css";
 
 const CommentSect = () => (
   <Comment.Group>
@@ -11,7 +11,7 @@ const CommentSect = () => (
         <Form reply>
           <Form.TextArea />
           <Button
-            content='Add Reply'
+            content='Add Comment'
             labelPosition='left'
             icon='edit'
             primary
