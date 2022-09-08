@@ -1,9 +1,37 @@
-import React from "react";
+import React, {useEffect, useState } from "react";
 import Search from "./Search";
 import "./Home.css";
 import Fetching from "./Fetching";
+import CommentContainer from './components/CommentContainer';
+import CommentPost from './components/CommentPost';
+import CommentFetch from './components/CommentFetch';
 
 function Home() {
+    const apiComment = "http://localhost:9292/create_comments";
+    const [commentList, setCommentList] = useState([]);
+    const [hideComment, setHideComment] = useState([true]);
+
+    function handleHideComment() {
+        setHideComment(!hideComment);
+    };
+
+    useEffect(() => {
+        fetch(apiComment)
+            .then(res => res.json())
+            .then(setCommentList);
+        
+    }, []);
+    
+    function addComment(newComment) {
+        setCommentList((commentList) => [...commentList, newComment]);
+    }
+
+    function deleteComment(commentToDelete) {
+        setCommentList(commentList.filter((comento)=>comento.id === commentToDelete.id));
+     }
+
+
+
     return (
         <div className="Home">
             <div className="Main_Page">
@@ -32,7 +60,17 @@ function Home() {
                 </div>
                     <Search />
 
-                    <Fetching /> 
+                    <Fetching />
+                    <div className="CommentsApp">
+                        <button onClick={ handleHideComment }>
+                            Show/Hide Comment
+                        </button>
+                        { hideComment ? <CommentPost addComment={addComment } /> : null}
+                    </div>
+
+                    <CommentContainer commentList = {commentList} deleteComment={deleteComment} />
+
+
                     <div className="FooterNote">By Earnest</div>
                 </div>
                 
