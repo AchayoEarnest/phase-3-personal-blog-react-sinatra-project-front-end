@@ -1,4 +1,5 @@
-import React, {useState } from 'react'
+import React, { useState } from 'react'
+import "./CommentPost.css";
 
 function CommentPost({ addComment }) {
     const [name, setName] = useState('')
@@ -18,33 +19,38 @@ function CommentPost({ addComment }) {
     
     function handleCommentSubmit(e) {
         e.preventDefault();
+        setReply(" ")
+        setName(" ")
+        setEmail(" ")
+
         const comment = {
             name,
             email,
             reply
-        }
+        };
+        
+        fetch("http://localhost:9292/create_comments", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(comment)
+        })
+            .then(res => res.json())
+            .then(newComment => {
+                addComment(newComment);
+            });
     }
     
-    fetch("http://localhost:9292/create_comments", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(comment)
-    })
-        .then(res => res.json())
-        .then(newComment => {
-            addComment(newComment);
-        });
-    
-  return (
-      <form className="CommentBox" onSubmit={ handleCommentSubmit }>
-          <input placeholder='Name' value={ name } onChange={ handleName } />
-          <input placeholder='Email' value={ email } onChange={ handleEmail } />
-          <textarea placeholder='Reply' value={ reply } onChange={ handleReply } />
-          <input type= "submit" placeholder="Reply" value="Share your comment" />
-    </form>
-  )
+        return (
+            <form className="CommentBox" onSubmit={ handleCommentSubmit }>
+                <textarea placeholder='Reply' value={reply} onChange={ handleReply} />
+                <input placeholder='Name' value={ name } onChange={ handleName } />
+                <input placeholder='Email' value={ email } onChange={handleEmail} />                
+                <input className='btn' type="submit" placeholder="Reply" value="Comment" />
+            </form>
+        );
+  
 }
 
-export default CommentPost
+export default CommentPost;

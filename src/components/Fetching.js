@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import "./Fetching.css";
-import CommentSect from "./CommentSect";
+
 
 
 
@@ -26,8 +26,7 @@ function Fetching() {
             <div className="Each_Post_Layout">
               <h2 className= "Titles">{post.title}</h2>
               <p>{ post.body }</p>
-              <p>{ post.comments }</p>
-              <CommentSect />           
+              <p>{ post.comments }</p>          
             </div>            
           }</li>)
         }

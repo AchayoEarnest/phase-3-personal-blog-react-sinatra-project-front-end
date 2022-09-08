@@ -2,9 +2,8 @@ import React, {useEffect, useState } from "react";
 import Search from "./Search";
 import "./Home.css";
 import Fetching from "./Fetching";
-import CommentContainer from './components/CommentContainer';
-import CommentPost from './components/CommentPost';
-import CommentFetch from './components/CommentFetch';
+import CommentContainer from './CommentContainer';
+import CommentPost from './CommentPost';
 
 function Home() {
     const apiComment = "http://localhost:9292/create_comments";
@@ -62,8 +61,8 @@ function Home() {
 
                     <Fetching />
                     <div className="CommentsApp">
-                        <button onClick={ handleHideComment }>
-                            Show/Hide Comment
+                        <button className="Hide_Show_Btn" onClick={ handleHideComment }>
+                            Show/Hide form
                         </button>
                         { hideComment ? <CommentPost addComment={addComment } /> : null}
                     </div>
@@ -71,11 +70,24 @@ function Home() {
                     <CommentContainer commentList = {commentList} deleteComment={deleteComment} />
 
 
-                    <div className="FooterNote">By Earnest</div>
+                    <div className="FooterNote">
+                        By Earnest
+                    </div>
                 </div>
                 
                 <div className="Sidebar_Sect_Right">
-                {/* Sidebar_Area_Right */}
+                    <div className="Account_Info">
+                        <img className="Account_Image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2fd3LvBNTzUGkRTqBX2UMvbrbzNuzShL4ll3pI5YUZg&s"
+                            alt="example"
+                        />
+                        <p>Welcome Back!</p>
+                        <h3>Earnest!</h3>
+                        <button className="Hide_Show_Btn">
+                            Logout
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
         </div>

@@ -1,8 +1,11 @@
 import React from 'react'
+import CommentFetch from './CommentFetch'
 
-function CommentContainer() {
+function CommentContainer({commentList, deleteComment}) {
   return (
-    <div>CommentContainer</div>
+      <div className="commentContainer">
+          { commentList.map(comento => <CommentFetch key={comento.id} comento = {comento} deleteComment={deleteComment} />)}
+    </div>
   )
 }
 
