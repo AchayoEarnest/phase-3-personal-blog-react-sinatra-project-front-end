@@ -26,7 +26,7 @@ function Home() {
     }
 
     function deleteComment(commentToDelete) {
-        setCommentList(commentList.filter((comento)=>comento.id === commentToDelete.id));
+        setCommentList(commentList.filter((comento)=>comento.id !== commentToDelete.id));
      }
 
 
@@ -83,7 +83,7 @@ function Home() {
                         />
                         <p>Welcome Back!</p>
                         <h3>Earnest!</h3>
-                        <button className="Hide_Show_Btn">
+                        <button className="Logout-Btn">
                             Logout
                         </button>
                     </div>

@@ -14,9 +14,16 @@
     color: rgb(253, 140, 10);
 }
 
+.CommentBox > textarea{
+    height: 120px;
+}
+
+
 .CommentBox > .btn{
     width: 30%;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    margin-left: 70.3%;
+    
 }

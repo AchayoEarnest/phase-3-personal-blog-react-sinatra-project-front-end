@@ -44,9 +44,9 @@ function CommentPost({ addComment }) {
     
         return (
             <form className="CommentBox" onSubmit={ handleCommentSubmit }>
-                <textarea placeholder='Reply' value={reply} onChange={ handleReply} />
-                <input placeholder='Name' value={ name } onChange={ handleName } />
-                <input placeholder='Email' value={ email } onChange={handleEmail} />                
+                <textarea placeholder='Reply' value={reply} onChange={ handleReply} required />
+                <input placeholder='Name' value={ name } onChange={ handleName } required />
+                <input placeholder='Email' type='email' value={ email } onChange={handleEmail} required/>                
                 <input className='btn' type="submit" placeholder="Reply" value="Comment" />
             </form>
         );

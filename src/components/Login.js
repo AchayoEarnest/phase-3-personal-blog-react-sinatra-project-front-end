@@ -1,0 +1,11 @@
+import "./Login.css";
+import React, { Component } from 'react';
+
+
+function Login() {
+  return (
+    <div>Login</div>
+  )
+}
+
+export default Login
