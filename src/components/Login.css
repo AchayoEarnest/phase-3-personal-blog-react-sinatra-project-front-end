@@ -5,3 +5,48 @@
     background-color: rgb(44, 43, 43);
     color: white;
   }
+
+  .Form_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: rgb(253, 140, 10);
+    font-size: large;
+    
+  }
+
+  Input {
+    height: 40px;
+    width: 400px;
+    color: rgb(253, 140, 10);
+    padding-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  button {
+    color: rgb(253, 140, 10);
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  label{
+    color: rgb(253, 140, 10);
+  }
+
+  .Form_Inner_Container{
+    border: 1px solid rgb(253, 140, 10);
+    padding: 20px;
+    border-radius: 7px;
+  }
+
+  .Nav_Links_2{
+    font-size: small;
+    float: right;
+    text-decoration: underline;
+    background-color: none;
+    background-color: rgb(44, 43, 43);
+    color: rgb(253, 140, 10);
+  }

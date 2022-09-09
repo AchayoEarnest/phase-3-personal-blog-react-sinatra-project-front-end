@@ -56,11 +56,18 @@
     padding :10px;
   }
 
-  .Side_Bar_Links {
-    color: rgb(253, 140, 10);
+  .Side_Bar_Links {    
     background-color: rgb(39, 37, 37);
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
+    list-style: none;
+  }
+  .Nav_Links {
+    color: rgb(253, 140, 10);
+    background-color: rgb(39, 37, 37);
+    list-style: none;
+    text-decoration: none;
+
   }
 
   .Side_Bar_Links:hover {

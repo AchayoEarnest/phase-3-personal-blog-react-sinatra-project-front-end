@@ -4,6 +4,7 @@ import "./Home.css";
 import Fetching from "./Fetching";
 import CommentContainer from './CommentContainer';
 import CommentPost from './CommentPost';
+import { Link } from 'react-router-dom'
 
 function Home() {
     const apiComment = "http://localhost:9292/create_comments";
@@ -34,21 +35,21 @@ function Home() {
     return (
         <div className="Home">
             <div className="Main_Page">
-                <div className="Sidebar_Sect_Left">
-                    <div className="Side_Bar_Links">
-                        Home
-                    </div>
-                    <div className="Side_Bar_Links">
-                        Explore
-                    </div>
-                    <div className="Side_Bar_Links">
-                        Account
-                    </div>
-                    <div className="Side_Bar_Links">
-                        Contact Us
-                    </div>
+                <ul className="Sidebar_Sect_Left">
+                    <li className="Side_Bar_Links">
+                        <Link to='/' className='Nav_Links'>Home</Link>
+                    </li>
+                    <li className="Side_Bar_Links">
+                        <Link to='/' className='Nav_Links'>Explore</Link>                        
+                    </li>
+                    <li className="Side_Bar_Links">
+                        <Link to='/signup' className='Nav_Links'>Signup</Link>
+                    </li>
+                    <li className="Side_Bar_Links">
+                        <Link to='/contact' className='Nav_Links'>Contact Us</Link>
+                    </li>
                     
-                </div>
+                </ul>
 
                 <div className="Main_Area">                
                     <div className="Hero_Head">
@@ -83,9 +84,9 @@ function Home() {
                         />
                         <p>Welcome Back!</p>
                         <h3>Earnest!</h3>
-                        <button className="Logout-Btn">
-                            Logout
-                        </button>
+                        <div className="Logout-Btn">
+                            <Link to='/login' className='Nav_Links'>Logout</Link>
+                        </div>
                     </div>
                     
                 </div>
