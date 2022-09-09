@@ -25,9 +25,9 @@ function CommentFetch({ comento, deleteComment }) {
 
 
   return (
-      <div className='Comment_Btns'>
+      <div className='Comment_Section'>
           <h3>{name}</h3>
-          <p>{ reply }</p>         
+          <p>{reply}</p>         
           <button className='Crud_Btns' onClick={ handleDelete }>Delete</button>
           <button className='Crud_Btns' onClick={ handleFavourite }>{ " " } { favourite ? "Not favourite" : "favourite" }</button>
           <button className='Crud_Btns'>Edit</button>

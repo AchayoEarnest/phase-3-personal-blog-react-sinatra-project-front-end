@@ -6,3 +6,12 @@
     margin-right: 5px;
     font-size: 15px;
 }
+
+.Comment_Section > h3 {
+    font-size: 16px;
+    
+}
+
+.Comment_Section > p {
+    font-size: 15px;
+}
