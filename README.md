@@ -68,6 +68,7 @@ Or you can access the web application directly via this [LINK.](https://app.cast
 4. Json
 5. React Semantics
 6. Sqlite3 server
+7. Sinatra and Active Records
 
 ---
 
