@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Cahayo Blog App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### Author : Earnest Achayo Date 9/9/2022
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Project Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is a blog website where users can view blog posts by the owner. Can add comments and can learn alot from the modern Tech world
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## SCREENSHOTS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](./public/images/1.png)
+![image](./public/images/2.png)
+![image](./public/images/3.png)
+![image](./public/images/4.png)
+![image](./public/images/5.png)
+![image](./public/images/6.png)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## SetUp Instruction
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Text editor eg [Visual Studio Code](https://code.visualstudio.com/download)
 
-### `npm run eject`
+### Getting Files
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Fork the repo [LINK.](https://github.com/AchayoEarnest?tab=repositories)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Create a new branch in your terminal (git checkout -b improve-feature)
+* Install the prerequisites
+* Make appropriate changes in file(s)
+* Run the server to see the changes
+* Add the changes and commit them (git commit -am "Improve App")
+* Push to the branch (git push origin improve-app)
+* Create a Pull request
+* Remember to also for the server from [LINK.](https://github.com/AchayoEarnest/phase-3-personal-blog-react-sinatra-project-api) and run it under its README.md instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Open the folder location on terminal and use the following command to run app:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Features
 
-## Learn More
+- Users can share their opinions under comment section by adding, creating, updating and deleting.
+- Users can read posts about tech by the author/owner of the website:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How To Run It
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> $ type 'npm start' on your text edito commandline and hit enter.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Live Link
 
-### Analyzing the Bundle Size
+Or you can access the web application directly via this [LINK.](https://app.castify.com/watch/f8d33907-876c-4fcd-bd92-b360c2aaeac9)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. JSX
+2. CSS
+3. React
+4. Json
+5. React Semantics
+6. Sqlite3 server
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contact Information
 
-### Deployment
+- Email : earnest.achayo@student.moringaschool.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## [License](LICENSE)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License
+Copyright (c) 2022 Earnest Achayo
