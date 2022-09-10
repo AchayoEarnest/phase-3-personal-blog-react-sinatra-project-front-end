@@ -65,7 +65,7 @@ const Login = () => {
                                 autoComplete="off"
                                 placeholder='First name'
                                 onChange={ (e) => setPass(e.target.value) }
-                                value={user}
+                                // value={user}
                                 required
                                 
                             />
@@ -77,7 +77,7 @@ const Login = () => {
                                 autoComplete="off"
                                 placeholder='Password'
                                 onChange={ (e) => setUser(e.target.value) }
-                                value={pass}
+                                // value={pass}
                                 required
                             />
                         </Form.Group>

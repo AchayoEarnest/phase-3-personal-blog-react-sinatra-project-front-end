@@ -7,10 +7,11 @@ import React from 'react'
 function Signup() {
   return (
     <div className='Form_Container'>
-        Signup
+        
         <div class='Form_Inner_Container'>
             <Form>
-                  <Form.Group widths='equal'>
+          <Form.Group widths='equal'>
+          <h3 className='Sign_H3'>Signup</h3> 
                       <Form.Input
                         fluid
                         id='form-subcomponent-shorthand-input-first-name'
