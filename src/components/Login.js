@@ -1,10 +1,31 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import {Button, Form } from 'semantic-ui-react'
 import './Login.css'
 import { Link } from 'react-router-dom';
 
-const FormExampleSubcomponentId = () => (
-    <div className='Form_Container'>
+const Login = () => {
+    const userRef = useRef();
+    const errRef = useRef();
+
+
+    const [user, setuser] = useState('');
+    const [pass, setPass] = useState('');
+    const [errMsg, setErrMsg] = useState('');
+    const [success, setSuccess] = useState(false);
+
+
+    useEffect(() => {
+        useRef.current.focus();
+    }, [])
+
+    useEffect(() => {
+        setErrMsg('');
+    }, [user, pass])
+
+
+
+    return (        
+        <div className='Form_Container'>
         Login
         <div class='Form_Inner_Container'>
             <Form>
@@ -32,6 +53,8 @@ const FormExampleSubcomponentId = () => (
         
         
   </div>
+    
 )
+}
 
-export default FormExampleSubcomponentId
+export default Login
