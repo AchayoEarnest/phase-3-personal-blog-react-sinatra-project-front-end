@@ -16,7 +16,7 @@ This is a blog website where users can view blog posts by the owner. Can add com
 
 ![image](./public/images/1.png)
 ![image](./public/images/2.png)
-![image](./public/images/3.png)
+![image](./public/images/4.png)
 ![image](./public/images/6.png)
 ![image](./public/images/5.png)
 
