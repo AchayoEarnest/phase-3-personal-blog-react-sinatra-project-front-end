@@ -7,7 +7,7 @@ import CommentPost from './CommentPost';
 import { Link } from 'react-router-dom'
 
 function Home() {
-    const apiComment = "http://localhost:9292/create_comments";
+    const apiComment = "https://cahayo-blog-app.herokuapp.com/create_comments";
     const [commentList, setCommentList] = useState([]);
     const [hideComment, setHideComment] = useState([true]);
 

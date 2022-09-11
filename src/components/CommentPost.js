@@ -29,7 +29,7 @@ function CommentPost({ addComment }) {
             reply
         };
         
-        fetch("http://localhost:9292/create_comments", {
+        fetch("https://cahayo-blog-app.herokuapp.com/create_comments", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
