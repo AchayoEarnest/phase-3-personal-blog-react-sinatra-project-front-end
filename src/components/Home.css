@@ -67,7 +67,11 @@
     background-color: rgb(39, 37, 37);
     list-style: none;
     text-decoration: none;
+  }
 
+  .Nav_Links:hover {
+    color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
   .Side_Bar_Links:hover {

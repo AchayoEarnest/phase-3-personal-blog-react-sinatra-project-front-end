@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './CommentFetch.css'
 
-const apiComment = "http://localhost:9292/create_comments"
+const apiComment = "https://cahayo-blog-app.herokuapp.com/create_comments"
 
 
 function CommentFetch({ comento, deleteComment }) {
